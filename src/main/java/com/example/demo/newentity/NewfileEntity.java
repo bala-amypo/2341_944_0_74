@@ -3,8 +3,8 @@
   import jakarta.persistence.GenerationValue;
   import jakarta.persistence.GenerationType;
   import jakarta.persistence.Id;
-  import jakarta.validation.constranints.Email;
-  import jakarta.validation.constranints.NotBlank;
+  import jakarta.validation.constranints.*;
+  
  
  
  
@@ -17,5 +17,6 @@
     @column(name=unique)
      @NotBlank(message = "no blank allowed")
      @Email(message = "invalid format")
-    private String email; 
+    private String email;
+     
  }
