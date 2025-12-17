@@ -18,21 +18,23 @@ import com.example.demo.newservice.NewfileService;
 
      @Override
      public NewfileEntity getidval(Long id){
+        return rep.get(id);
 
      }
 
      @Override
      public List<NewfileEntity> getall(){
+        return rep.getall();
 
      }
 
      @Override
      public NewfileEntity update(Long id, NewfileEntity newfile){
-
+         return rep.replace(id,newfile);
      }
 
      @Override
      public void delete(Long id){
-
+        return rep.remove(id);
      }
   }
