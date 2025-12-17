@@ -30,7 +30,10 @@ import com.example.demo.newservice.NewfileService;
 
      @Override
      public NewfileEntity update(Long id, NewfileEntity newfile){
-         return rep.(id,newfile);
+       NewfileEntity existing = getidval(id);
+       existing.setName(newfile.getName());
+       existing.setEmail(newfile.getEmail());
+       return rep.save(existing);
      }
 
      @Override
