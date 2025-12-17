@@ -2,11 +2,14 @@
 
 import java.time.LocalDate;
 
-
+@entity
 public class StudentEntity {
+    @id
+    @GenerateValue(strategy = GenerationType.IDENTITY )
+    private Integer id;
+    @GeneratedValue(strategy = GenerationType.Auto)
+    private Integer rollno;
     private String name;
-    private int id;
-    private LocalDate dob;
     private String email;
     private float cgpa;
 
