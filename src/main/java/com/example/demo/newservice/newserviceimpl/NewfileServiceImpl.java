@@ -18,7 +18,7 @@ import com.example.demo.newservice.NewfileService;
 
      @Override
      public NewfileEntity getidval(Long id){
-        return rep.findby(id);
+        return rep.findbyId(id);
 
      }
 
@@ -38,6 +38,6 @@ import com.example.demo.newservice.NewfileService;
 
      @Override
      public void delete(Long id){
-        return rep.remove(id);
+        rep.delete(Long id);
      }
   }
