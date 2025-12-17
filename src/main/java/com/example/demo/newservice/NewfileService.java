@@ -6,5 +6,5 @@
  public interface StudentService {
     NewfileEntity savedata(NewfileEntity newfile);
     NewfileEntity getidval(Long id);
-    
+    List<NewfileEntity
  }
