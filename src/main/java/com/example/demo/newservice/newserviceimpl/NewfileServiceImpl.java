@@ -13,7 +13,7 @@ import com.example.demo.newservice.NewfileService;
     }
      @Override
      public NewfileEntity savedata(NewfileEntity newfile){
-        
+         return rep.save(newfile);
      }
 
      @Override
