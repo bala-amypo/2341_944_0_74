@@ -8,7 +8,7 @@ public class StudentEntity {
     @GenerateValue(strategy = GenerationType.IDENTITY )
     private Integer id;
     @GeneratedValue(strategy = GenerationType.Auto)
-    private Integer rollno;
+    private Integer roll;
     private String name;
     private String email;
     private float cgpa;
