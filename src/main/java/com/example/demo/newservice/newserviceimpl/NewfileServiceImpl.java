@@ -18,19 +18,19 @@ import com.example.demo.newservice.NewfileService;
 
      @Override
      public NewfileEntity getidval(Long id){
-        return rep.get(id);
+        return rep.findby(id);
 
      }
 
      @Override
      public List<NewfileEntity> getall(){
-        return rep.getall();
+        return rep.findall();
 
      }
 
      @Override
      public NewfileEntity update(Long id, NewfileEntity newfile){
-         return rep.replace(id,newfile);
+         return rep.(id,newfile);
      }
 
      @Override
