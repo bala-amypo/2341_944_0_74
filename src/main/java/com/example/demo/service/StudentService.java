@@ -3,7 +3,7 @@
 
  import com.example.demo.entity.StudentEntity;
  
- public interface StudentService{
+ public interface StudentService {
     StudentEntity postStudent(StudentEntity stu);
     List<StudentEntity> getdata();
    StudentEntity updatedata(int id, StudentEntity std);
