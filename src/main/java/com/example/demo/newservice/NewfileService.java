@@ -1,5 +1,10 @@
  package com.example.demo.newservice;
+ import java.util.List;
 
- public interface NewfileService{
-
+ import com.example.demo.entity.NewfileEntity;
+ 
+ public interface StudentService {
+    NewfileEntity savedata(NewfileEntity newfile);
+    NewfileEntity getidval(Long id);
+    
  }
