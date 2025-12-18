@@ -3,7 +3,7 @@
 // import java.time.LocalDate;
 
 // @entity
-// public class StudentEntity {
+// public class StudentEntity{
 //     @id
 //     @GenerateValue(strategy = GenerationType.IDENTITY )
 //     private Integer id;
@@ -37,7 +37,7 @@
 //     public void setId(int id) {
 //         this.id = id;
 //     }
-//     public LocalDate getDob() {
+//     public LocalDate getDob(){
 //         return dob;
 //     }
 //     public void setDob(LocalDate dob) {
@@ -46,7 +46,7 @@
 //     public String getEmail() {
 //         return email;
 //     }
-//     public void setEmail(String email) {
+//     public void setEmail(String email){
 //         this.email = email;
 //     }
 //     public float getCgpa() {
