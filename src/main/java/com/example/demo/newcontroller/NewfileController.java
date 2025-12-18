@@ -22,7 +22,7 @@ public class NewfileController {
     }
 
     @PostMapping
-    public ResponseEntity<Student> createStudent(@Valid @RequestBodyStudent service) {
+    public ResponseEntity <Student> createStudent(@Valid @RequestBodyStudent service) {
         return new ResponseEntity<>(service.saveStudent(student),HttpStatus.CREATED);
     }
 
